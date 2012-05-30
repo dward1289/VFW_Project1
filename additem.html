@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Remind Me Later</title>
     <meta charset="UTF-8" />
@@ -10,17 +11,19 @@
 </head>
 
 <body>
-
+<!--Title of app-->
 <header>
     <h1>Remind Me Later</h1>
 </header>
 
-	<form action="#" method="post">
-		<fieldset>
-			<legend>What's the Task?</legend>
+<form action="#" method="post">
+	<fieldset>
+		<legend>What's the Task?</legend>
+			<!--Info in the fieldset-->
 			<ul>
 				<li><label for="taskName">Name of Task:</label><input type="text" id="taskName" /></li>
 			</ul>
+			<!--Checkboxes-->
 			<ul>
 				<li><input type="checkbox" value="Home" id="home" /><label for="home">Home<label></li>
 				<li><input type="checkbox" value="Business" id="business" /><label for="business">Business<label></li>
@@ -28,40 +31,44 @@
 			</ul>
 
 		</fieldset>
+		
+		<!--Date select-->
 		<ul>
-				<li><label for="taskDate">Starting Date of Task:</label><input type="date" id="taskDate" /></li>
+			<li><label for="taskDate">Starting Date of Task:</label><input type="date" id="taskDate" /></li>
 		</ul>
 		<ul>
-				<li><label for="taskEnd">Ending Date of Task:</label><input type="date" id="taskEnd" /></li>
-			</ul>
-			<ul>
+			<li><label for="taskEnd">Ending Date of Task:</label><input type="date" id="taskEnd" /></li>
+		</ul>
+			
+		<!--Priority levels-->
+		<ul>
 			<li>
 			<label for="priority">Select Priority</label>
-			<select id="priority">
-			
-			<option value="High">High</option>
-			<option value="Medium">Medium</option>
-			<option value="Low">Low</option>
-			
+				<select id="priority">
+					<option value="High">High</option>
+					<option value="Medium">Medium</option>
+					<option value="Low">Low</option>
 			</select>
 			</li>
-			</ul>
-		
-	<ul>
-<li><label for="taskDate">Select Alert Option</label><input type="range" id="alertWay" min="1" max="3" /></li>
-
-<li><label for="mood">Notes:</label><textarea id="mood"></textarea></li>
-<li><input type="hidden" value="true" /></li>
 		</ul>
+		
+	<!--Stages of alerts available-->	
+	<ul>
+	<li><label for="taskDate">Select Alert Option</label><input type="range" id="alertWay" min="1" max="3" /></li>
+	
+	<!--Notes-->
+	<li><label for="notes">Notes:</label><textarea id="notes"></textarea></li>
+	<li><input type="hidden" value="true" /></li>
+	</ul>
 
-
-	</form>
+</form>
 
 
 <button>Submit</button> 
 
 <footer>
-<a href="#">Clear Stored Data</a> <a href="#">Display Data</a>
+<!--Tried using a href="#" , but it did not refresh page.-->
+<a href= "">Clear Stored Data</a> <a href= "">Display Data</a>
 </footer>
 
 </body>
